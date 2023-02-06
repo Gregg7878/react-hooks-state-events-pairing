@@ -7,9 +7,7 @@ function Element({title,vedio,views,upcount, downcount,comments}){
        <h3>{title}</h3>
          </div>
         <div>
-            {comments.map((item)=>
-                <p key={item.comments}</p>
-            })
+            {comments.map((item) => (<p key={item.id}>item.comment</p>))}
          </div>
     );
 }
